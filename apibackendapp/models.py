@@ -7,7 +7,7 @@ from django.conf import settings
 def create_auth_token(sender,instance=None,Created=False,**kwargs):
     if Created:
         Token.objects.create(user=instance)
-# Create your models here.
+# Create your wonderful models here.
 
 class Department(models.Model):
     DepartmentId = models.AutoField(primary_key=True)
