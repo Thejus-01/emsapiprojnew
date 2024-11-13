@@ -7,8 +7,13 @@ from django.conf import settings
 def create_auth_token(sender,instance=None,Created=False,**kwargs):
     if Created:
         Token.objects.create(user=instance)
+<<<<<<< HEAD
 # Create your wonderful models here.
 
+=======
+# Create your models here.
+#models
+>>>>>>> 31551434ded65a8def326cb5fb1ff11f396abffe
 class Department(models.Model):
     DepartmentId = models.AutoField(primary_key=True)
     DepartmentName = models.CharField(max_length=200)
